@@ -1,0 +1,43 @@
+
+<a href="/">返回首页</a><br/>
+<% rl=Resource.where(:resource_data_id => params[:id],:file_type => 'icon').each do |logo|%>
+  <img src="/upload/icon/<%= logo.id %><%= logo.ext%>" width="48px" height="48px"/>
+<% end %>
+
+<%
+	s = Software.find(params[:id])
+%>
+&nbsp;<%= s.title %><br />
+类型：<%s.software_types.each do |st|%>
+         <%= st.title %>
+      <% end %>
+   <br />
+语言：简体中文<br />
+机型：
+<% s.mobile_types.each do |mt|%>
+   <%= mt.title %>
+<%end%>
+
+
+<br />
+按平台下载：<br />
+<table>
+	<% res=Resource.where(:resource_data_id => params[:id],:file_type => 'software').each do |rs|%>
+	<tr>
+		
+	       <td>
+	           <a href="/upload/software/<%= rs.id %><%= rs.ext%>">免费下载</a>
+	       </td>
+	</tr>
+	<% end %>
+</table>
+
+简介：
+<%= raw s.description %>
+<br/>
+<% rei=Resource.where(:resource_data_id => params[:id],:file_type => 'img').each do |ri|%>
+
+  <img src="/upload/img/<%= ri.id%><%= ri.ext%>" /><br />
+
+<% end %>
+

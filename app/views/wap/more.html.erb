@@ -1,0 +1,27 @@
+
+<% s = SoftwareType.find(params[:id])%>
+
+<img src="/images/logo.gif"/><br/>
+<div class="con">
+	<div class="yztitle">【<%= s.title %>】</div>
+</div>
+
+    
+
+    <% SoftwareType.where(:parent_id => s.id ).each do |main_type| %>
+        
+          <% main_type.softwares.each do |so| %>
+
+         	 <% logo=Resource.where(:resource_data_id => so.id,:file_type => 'icon').first %>
+ 					 <img src="<%= "/upload/icon/#{logo.id}#{logo.ext}" if logo %>"  width='30px' height='30px'/>
+					 <a href="/software/<%= so.id %>"><%= so.title %></a><br />	
+			
+		  <% end %>
+
+         
+    <% end %>
+
+
+<% s.softwares.each do |ss| %>
+ <a href="/software/<%= ss.id %>"><%= ss.title %></a> |
+<% end %>

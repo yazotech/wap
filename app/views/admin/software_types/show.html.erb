@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @software_type.title %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @software_type.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_software_type_path(@software_type) %> |
+<%= link_to 'Back', admin_software_types_path %>

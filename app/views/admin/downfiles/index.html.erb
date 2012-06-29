@@ -1,0 +1,27 @@
+<h1>Listing downfiles</h1>
+
+<table>
+  <tr>
+    <th>Software</th>
+    <th>File name</th>
+    <th>Platform</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @downfiles.each do |downfile| %>
+  <tr>
+    <td><%= downfile.software_id %></td>
+    <td><%= downfile.file_name %></td>
+    <td><%= downfile.Platform %></td>
+    <td><%= link_to 'Show', admin_downfile_path(downfile) %></td>
+    <td><%= link_to 'Edit', edit_admin_downfile_path(downfile) %></td>
+    <td><%= link_to 'Destroy', admin_downfile_path(downfile), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Downfile', new_admin_downfile_path %>

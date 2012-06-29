@@ -1,0 +1,24 @@
+<h1>Listing mobile_types</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mobile_types.each do |mobile_type| %>
+  <tr>
+    <td><%= mobile_type.title %></td>
+    <td><%= link_to 'Show', admin_mobile_type_path(mobile_type) %></td>
+    <td><%= link_to 'Edit', edit_admin_mobile_type_path(mobile_type) %></td>
+    <td><%= link_to 'Destroy', admin_mobile_type_path(mobile_type), :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mobile type', new_admin_mobile_type_path %>
+

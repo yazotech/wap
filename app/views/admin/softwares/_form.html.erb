@@ -1,0 +1,83 @@
+<% current_ids = @software.software_type_ids %>
+<%= form_for([:admin,@software], :html => {:multipart => true}) do |f| %>
+  <% if @software.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@software.errors.count, "error") %> prohibited this software from being saved:</h2>
+      <ul>
+      <% @software.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :language %><br />
+    <%= f.text_field :language %>
+  </div> 
+  
+   <div>
+	<%= f.label :mobiletype %><br />
+  	<% MobileType.all.each do |mt| %>
+    		<%= check_box_tag "software[mobile_type_ids][]", mt.id, current_ids.include?(mt.id), :id => "mt_#{mt.id}" %>
+          <label for=''><%= mt.title %></label>, 
+  	<% end %>	
+</div>  
+
+  <div>
+	<%= f.label :softwaretype %><br />
+  	<% SoftwareType.all.each do |st| %>
+    	<label>
+      		<%= check_box_tag "software[software_type_ids][]", st.id, current_ids.include?(st.id) %>
+          <%= st.title %></label>, 
+  	<% end %>	
+  	
+</div>
+<div>
+	Images:
+	<% @software.resources.images.each do |img| %>
+		<label><%= img.original_filename %></label>
+	<% end %><br />
+	
+	<% Resource.images.free.order(:original_filename).each do |img| %>
+
+	<%= image_tag "/upload/#{img.file_type}/#{img.id}#{img.ext}", :width => 30 %>
+
+		<label><%= img.id %><%= img.ext%></label>
+		
+		<%= check_box_tag "software[resource_ids][]", img.id, false %>
+		<br />
+	<% end %>
+</div>
+<div>
+	Softwares:
+	<% @software.resources.softwares.each do |img| %>
+		<label><%= img.original_filename %></label>
+	<% end %>
+	<br />
+	<% Resource.softwares.free.order(:original_filename).each do |img| %>
+		<label><%= img.original_filename %></label>
+		<%= check_box_tag "software[resource_ids][]", img.id, false %>
+	<% end %>
+</div>
+  <br />
+  
+  <div>
+    <label for="file">Upload:</label>
+         文件：<%= file_field_tag "datafile" %>属性：
+    <%= select_tag("file_type", "<option>img</option><option>software</option><option>icon</option>".html_safe) %>
+
+  </div>
+  
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

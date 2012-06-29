@@ -1,0 +1,108 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ActiveSupport	test/test_helper.rb	/^class ActiveSupport::TestCase$/;"	c
+AddResourcesRef	db/migrate/20110816000002_add_resources_ref.rb	/^class AddResourcesRef < ActiveRecord::Migration$/;"	c
+AddSoftwareParent	db/migrate/20110808075905_add_software_parent.rb	/^class AddSoftwareParent < ActiveRecord::Migration$/;"	c
+Admin	app/controllers/admin/admin_controller.rb	/^class Admin::AdminController < ActionController::Base$/;"	c
+Admin	app/controllers/admin/downfiles_controller.rb	/^class Admin::DownfilesController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/home_controller.rb	/^class Admin::HomeController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/mobile_types_controller.rb	/^class Admin::MobileTypesController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/photos_controller.rb	/^class Admin::PhotosController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/software_types_controller.rb	/^class Admin::SoftwareTypesController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/softwares_controller.rb	/^class Admin::SoftwaresController < Admin::AdminController$/;"	c
+Admin	app/controllers/admin/upload_resource_controller.rb	/^class Admin::UploadResourceController < Admin::AdminController$/;"	c
+Admin	app/models/admin.rb	/^module Admin$/;"	m
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Wap
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BrowsingTest	test/performance/browsing_test.rb	/^class BrowsingTest < ActionDispatch::PerformanceTest$/;"	c
+CreateDownfiles	db/migrate/20110815071719_create_downfiles.rb	/^class CreateDownfiles < ActiveRecord::Migration$/;"	c
+CreateMobileTypeMaps	db/migrate/20110812000001_create_mobile_type_maps.rb	/^class CreateMobileTypeMaps < ActiveRecord::Migration$/;"	c
+CreateMobileTypes	db/migrate/20110808081156_create_mobile_types.rb	/^class CreateMobileTypes < ActiveRecord::Migration$/;"	c
+CreatePhotos	db/migrate/20110810093055_create_photos.rb	/^class CreatePhotos < ActiveRecord::Migration$/;"	c
+CreateResources	db/migrate/20110816000001_create_resources.rb	/^class CreateResources < ActiveRecord::Migration$/;"	c
+CreateSoftwareTypeMaps	db/migrate/20110808081158_create_software_type_maps.rb	/^class CreateSoftwareTypeMaps < ActiveRecord::Migration$/;"	c
+CreateSoftwareTypes	db/migrate/20110808075904_create_software_types.rb	/^class CreateSoftwareTypes < ActiveRecord::Migration$/;"	c
+CreateSoftwares	db/migrate/20110808071850_create_softwares.rb	/^class CreateSoftwares < ActiveRecord::Migration$/;"	c
+Downfile	app/models/downfile.rb	/^class Downfile < ActiveRecord::Base$/;"	c
+LoginController	app/controllers/login_controller.rb	/^class LoginController < ApplicationController$/;"	c
+LoginUser	app/models/login_user.rb	/^class LoginUser$/;"	c
+MobileType	app/models/mobile_type.rb	/^class MobileType < ActiveRecord::Base$/;"	c
+Photo	app/models/photo.rb	/^class Photo < ActiveRecord::Base$/;"	c
+Resource	app/models/resource.rb	/^class Resource < ActiveRecord::Base$/;"	c
+Software	app/models/software.rb	/^class Software < ActiveRecord::Base$/;"	c
+SoftwareType	app/models/software_type.rb	/^class SoftwareType < ActiveRecord::Base$/;"	c
+UploadResource	app/models/upload_resource.rb	/^class UploadResource < ActiveRecord::Base$/;"	c
+Wap	config/application.rb	/^module Wap$/;"	m
+WapController	app/controllers/wap_controller.rb	/^class WapController < ApplicationController$/;"	c
+check_auth	app/controllers/admin/admin_controller.rb	/^  def check_auth$/;"	f	class:Admin
+check_auth	app/controllers/admin/home_controller.rb	/^  def check_auth$/;"	f	class:Admin
+create	app/controllers/admin/downfiles_controller.rb	/^  def create$/;"	f	class:Admin
+create	app/controllers/admin/mobile_types_controller.rb	/^  def create$/;"	f	class:Admin
+create	app/controllers/admin/photos_controller.rb	/^  def create$/;"	f	class:Admin
+create	app/controllers/admin/software_types_controller.rb	/^  def create$/;"	f	class:Admin
+create	app/controllers/admin/softwares_controller.rb	/^  def create$/;"	f	class:Admin
+destroy	app/controllers/admin/downfiles_controller.rb	/^  def destroy$/;"	f	class:Admin
+destroy	app/controllers/admin/mobile_types_controller.rb	/^  def destroy$/;"	f	class:Admin
+destroy	app/controllers/admin/photos_controller.rb	/^  def destroy$/;"	f	class:Admin
+destroy	app/controllers/admin/software_types_controller.rb	/^  def destroy$/;"	f	class:Admin
+destroy	app/controllers/admin/softwares_controller.rb	/^  def destroy$/;"	f	class:Admin
+down	db/migrate/20110808071850_create_softwares.rb	/^  def self.down$/;"	F	class:CreateSoftwares
+down	db/migrate/20110808075904_create_software_types.rb	/^  def self.down$/;"	F	class:CreateSoftwareTypes
+down	db/migrate/20110808075905_add_software_parent.rb	/^  def self.down$/;"	F	class:AddSoftwareParent
+down	db/migrate/20110808081156_create_mobile_types.rb	/^  def self.down$/;"	F	class:CreateMobileTypes
+down	db/migrate/20110808081158_create_software_type_maps.rb	/^  def self.down$/;"	F	class:CreateSoftwareTypeMaps
+down	db/migrate/20110810093055_create_photos.rb	/^  def self.down$/;"	F	class:CreatePhotos
+down	db/migrate/20110812000001_create_mobile_type_maps.rb	/^  def self.down$/;"	F	class:CreateMobileTypeMaps
+down	db/migrate/20110815071719_create_downfiles.rb	/^  def self.down$/;"	F	class:CreateDownfiles
+down	db/migrate/20110816000001_create_resources.rb	/^  def self.down$/;"	F	class:CreateResources
+down	db/migrate/20110816000002_add_resources_ref.rb	/^  def self.down$/;"	F	class:AddResourcesRef
+edit	app/controllers/admin/downfiles_controller.rb	/^  def edit$/;"	f	class:Admin
+edit	app/controllers/admin/mobile_types_controller.rb	/^  def edit$/;"	f	class:Admin
+edit	app/controllers/admin/photos_controller.rb	/^  def edit$/;"	f	class:Admin
+edit	app/controllers/admin/software_types_controller.rb	/^  def edit$/;"	f	class:Admin
+edit	app/controllers/admin/softwares_controller.rb	/^  def edit$/;"	f	class:Admin
+icon	app/models/resource.rb	/^  def self.icon$/;"	F	class:Resource
+index	app/controllers/admin/downfiles_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/home_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/mobile_types_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/photos_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/software_types_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/softwares_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/admin/upload_resource_controller.rb	/^  def index$/;"	f	class:Admin
+index	app/controllers/wap_controller.rb	/^  def index$/;"	f	class:WapController
+login	app/controllers/login_controller.rb	/^  def login$/;"	f	class:LoginController
+logout	app/controllers/admin/home_controller.rb	/^  def logout$/;"	f	class:Admin
+logout	app/controllers/login_controller.rb	/^  def logout$/;"	f	class:LoginController
+new	app/controllers/admin/downfiles_controller.rb	/^  def new$/;"	f	class:Admin
+new	app/controllers/admin/mobile_types_controller.rb	/^  def new$/;"	f	class:Admin
+new	app/controllers/admin/photos_controller.rb	/^  def new$/;"	f	class:Admin
+new	app/controllers/admin/software_types_controller.rb	/^  def new$/;"	f	class:Admin
+new	app/controllers/admin/softwares_controller.rb	/^  def new$/;"	f	class:Admin
+show	app/controllers/admin/downfiles_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/admin/mobile_types_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/admin/photos_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/admin/software_types_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/admin/softwares_controller.rb	/^  def show$/;"	f	class:Admin
+show	app/controllers/wap_controller.rb	/^  def show$/;"	f	class:WapController
+table_name_prefix	app/models/admin.rb	/^  def self.table_name_prefix$/;"	F	class:Admin
+test_homepage	test/performance/browsing_test.rb	/^  def test_homepage$/;"	f	class:BrowsingTest
+up	db/migrate/20110808071850_create_softwares.rb	/^  def self.up$/;"	F	class:CreateSoftwares
+up	db/migrate/20110808075904_create_software_types.rb	/^  def self.up$/;"	F	class:CreateSoftwareTypes
+up	db/migrate/20110808075905_add_software_parent.rb	/^  def self.up$/;"	F	class:AddSoftwareParent
+up	db/migrate/20110808081156_create_mobile_types.rb	/^  def self.up$/;"	F	class:CreateMobileTypes
+up	db/migrate/20110808081158_create_software_type_maps.rb	/^  def self.up$/;"	F	class:CreateSoftwareTypeMaps
+up	db/migrate/20110810093055_create_photos.rb	/^  def self.up$/;"	F	class:CreatePhotos
+up	db/migrate/20110812000001_create_mobile_type_maps.rb	/^  def self.up$/;"	F	class:CreateMobileTypeMaps
+up	db/migrate/20110815071719_create_downfiles.rb	/^  def self.up$/;"	F	class:CreateDownfiles
+up	db/migrate/20110816000001_create_resources.rb	/^  def self.up$/;"	F	class:CreateResources
+up	db/migrate/20110816000002_add_resources_ref.rb	/^  def self.up$/;"	F	class:AddResourcesRef
+update	app/controllers/admin/downfiles_controller.rb	/^  def update$/;"	f	class:Admin
+update	app/controllers/admin/mobile_types_controller.rb	/^  def update$/;"	f	class:Admin
+update	app/controllers/admin/photos_controller.rb	/^  def update$/;"	f	class:Admin
+update	app/controllers/admin/software_types_controller.rb	/^  def update$/;"	f	class:Admin
+update	app/controllers/admin/softwares_controller.rb	/^  def update$/;"	f	class:Admin

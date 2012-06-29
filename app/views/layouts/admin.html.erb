@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wap</title>
+  <%= stylesheet_link_tag "admin/all", :media => "all" %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="header">
+		<div class='content'>
+			<ul class="main_menu">
+				<li><a href="/">Wap网站</a></li>
+				<li><a href="/admin/softwares">项目</a></li>
+				<li><a href="/admin/mobile_types">手机类型</a></li>
+				<li><a href="/admin/software_types">类型</a></li>
+				<li><a href="/admin/photos">图片上传</a></li>
+				<li><a href="/admin/upload">文件上传</a></li>
+			</ul>
+			<div id="login">
+				<a href="/logout">退出登录</a>
+			</div>
+		</div>
+	</div>
+
+	<div id="main">
+		<div id="content">
+			<%= yield %>
+		</div>		
+	</div>
+	
+	<div id="footer">
+		帮助中心 | 客服中心 | 服务热线<br />
+		© 1998 - 2011 Yazotech co., ltd. All Rights Reserved
+	</div>
+</body>
+</html>

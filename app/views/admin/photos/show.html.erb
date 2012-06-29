@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Software:</b>
+  <%= @photo.software_id %>
+</p>
+
+<p>
+  <b>Photo type:</b>
+  <%= @photo.photo_name %>
+</p>
+<p>
+  <b>Photo type:</b>
+  <%= @photo.photo_type %>
+</p>
+
+<%= link_to 'Edit', edit_admin_photo_path(@photo) %> |
+<%= link_to 'Back', admin_photos_path %>

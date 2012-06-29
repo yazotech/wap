@@ -1,0 +1,20 @@
+		<img src="/images/logo.gif"/><br/>
+
+		<% SoftwareType.where(:parent_id => nil ).each do |main_type| %>
+		<div class="con">
+			<div class="yztitle">
+				【<%= main_type.title %>】
+				&nbsp;&nbsp;<a href="/softwares/<%= main_type.id %>">更多>></a>
+			</div>
+		</div>
+		
+			<% main_type.children.each do |t| %>
+				[<a href="/softwares/<%= t.id %>"><%= t.title%></a>]&nbsp; 
+				<% t.softwares.limit(4).each do |s| %>
+					<a href="/software/<%= s.id %>"><%= s.title %></a>&nbsp;
+				<% end %>
+				<br />
+			<% end %>
+		<% end %>
+		
+		

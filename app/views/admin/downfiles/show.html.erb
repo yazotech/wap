@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Software:</b>
+  <%= @downfile.software_id %>
+</p>
+
+<p>
+  <b>File name:</b>
+  <%= @downfile.file_name %>
+</p>
+
+<p>
+  <b>Platform:</b>
+  <%= @downfile.Platform %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_downfile_path(@downfile) %> |
+<%= link_to 'Back', admin_downfiles_path %>
